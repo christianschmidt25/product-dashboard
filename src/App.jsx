@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './App.css'
-import './ProductList/jsx'
-import './AddProductForm.jsx'
+import ProductList from './ProductList.jsx'
+import AddProductForm from './AddProductForm.jsx'
 
 const App = () => {
   const [products, setProducts] = useState([

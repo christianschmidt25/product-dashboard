@@ -7,16 +7,17 @@ function AddProductForm() {
     const [description, setDescription] = useState('');
 
     const handleChange = (event) => {
-        setId(event.target.value),
-        setName(event.target.value),
-        setPrice(event.target.value),
-        setDescription(event.target.value)
+        const { name, value } = event.target;
+            if (name === 'id') setId(value);
+            if (name === 'name') setName(value);
+            if (name === 'price') setPrice(value);
+            if (name === 'description') setDescription(value);
     };
 
   return (
     <div>
       <h2>Add a New Product</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleChange}>
         <div>
             <label>
                 Id:

@@ -1,5 +1,4 @@
 import React from 'react'
-import products from './App.jsx'
 import './ProductItem.jsx'
 
 const ProductList = ({ products }) => {
