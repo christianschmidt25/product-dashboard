@@ -9,4 +9,4 @@ const products = [
     { id: 4, name: 'Compression Shorts', price: 30, description: `While preparing for the season, basketball compression shorts have your back. They're stretchy, comfy, and full of Sport Style.` },
   ];
 
-export default products
+export default products;
