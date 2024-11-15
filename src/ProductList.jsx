@@ -10,7 +10,7 @@ const ProductList = ({ products }) => {
                 <ProductItem key={product.id} product={product} />
                 ))}
             </ul>
-            </div>
+        </div>
     );
 };
 

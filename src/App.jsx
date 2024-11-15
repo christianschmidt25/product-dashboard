@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import ProductList from './ProductList.jsx'
 import AddProductForm from './AddProductForm.jsx'
 
