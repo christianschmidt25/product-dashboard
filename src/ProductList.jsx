@@ -6,9 +6,9 @@ const ProductList = ({ products }) => {
         <div>
             <h2>Product List</h2>
             <ul>
-                {products.map((product) => (
+                {products.map((product) => ( 
                 <ProductItem key={product.id} product={product} />
-                ))}
+                ))} {/* lists all the products with their aspects in the Product List */}
             </ul>
         </div>
     );

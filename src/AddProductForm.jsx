@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function AddProductForm({ addProduct }) {
+function AddProductForm({ addProduct }) { /* includes all information needed to create a new product */
     const [id, setId] = useState('');
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
@@ -12,7 +12,7 @@ function AddProductForm({ addProduct }) {
             if (name === 'name') setName(value);
             if (name === 'price') setPrice(value);
             if (name === 'description') setDescription(value);
-    };
+    }; /* will create a new product if the names entered are correct values */
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -22,11 +22,11 @@ function AddProductForm({ addProduct }) {
             setName('');
             setPrice('');
             setDescription('');
-        }
+        } /* makes the default new product form all blank once the page is loaded */
     };
 
   return (
-    <div>
+    <div> {/* formatting on how the form should be completed */}
       <h2>Add a New Product</h2>
       <form onSubmit={handleSubmit}>
         <div>

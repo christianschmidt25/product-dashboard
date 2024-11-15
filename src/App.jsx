@@ -12,14 +12,14 @@ const App = () => {
   ]);
 
   const addProduct = (newProduct) => {
-    setProducts([...products, {...newProduct}]);
+    setProducts([...products, {...newProduct}]); {/* allows a new, added product to join the other list of products */}
   };
 
   return (
     <div>
       <h1>Product Dashboard</h1>
-      <ProductList products={products} />
-      <AddProductForm addProduct={addProduct} />
+      <ProductList products={products} /> {/* adds the list of products to this portion of the page */}
+      <AddProductForm addProduct={addProduct} /> {/* adds the addProduct function to our page, and displays the entire function */}
     </div>
   );
 };
