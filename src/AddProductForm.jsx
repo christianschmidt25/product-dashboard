@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function AddProductForm() {
+function AddProductForm({ addProduct }) {
     const [id, setId] = useState('');
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
@@ -14,10 +14,21 @@ function AddProductForm() {
             if (name === 'description') setDescription(value);
     };
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (name && price && description) {
+            addProduct({ id, name, price, description });
+            setId('');
+            setName('');
+            setPrice('');
+            setDescription('');
+        }
+    };
+
   return (
     <div>
       <h2>Add a New Product</h2>
-      <form onSubmit={handleChange}>
+      <form onSubmit={handleSubmit}>
         <div>
             <label>
                 Id:
