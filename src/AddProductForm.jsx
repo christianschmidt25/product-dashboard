@@ -32,19 +32,25 @@ function AddProductForm({ addProduct }) {
         <div>
             <label>
                 Id:
-                <input type="number" value={id} onChange={handleChange} />
+                <input type="number" name="id" value={id} onChange={handleChange} />
             </label>
+        </div>
+        <div>
             <label>
                 Name:
-                <input type="text" value={name} onChange={handleChange} />
+                <input type="text" name="name" value={name} onChange={handleChange} />
             </label>
+        </div>
+        <div>
             <label>
                 Price:
-                <input type="number" value={price} onChange={handleChange} />
+                <input type="number" name="price" value={price} onChange={handleChange} />
             </label>
+        </div>
+        <div>
             <label>
                 Description:
-                <input type="text" value={description} onChange={handleChange} />
+                <input type="text" name="description" value={description} onChange={handleChange} />
             </label>
         </div>
         <button type="submit">Add Product</button>
